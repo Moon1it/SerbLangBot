@@ -1,0 +1,2847 @@
+[{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b3"
+  },
+  "topicId": 1,
+  "question": "Ja ___ iz Beograda.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b4"
+  },
+  "topicId": 1,
+  "question": "One ___ kod kuće.",
+  "variants": [
+    "smo",
+    "sam",
+    "si",
+    "je",
+    "su",
+    "ste"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b5"
+  },
+  "topicId": 1,
+  "question": "Ti ___ student.",
+  "variants": [
+    "smo",
+    "je",
+    "si",
+    "ste",
+    "su",
+    "sam"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b6"
+  },
+  "topicId": 1,
+  "question": "Mi ___ srećni.",
+  "variants": [
+    "smo",
+    "ste",
+    "su",
+    "sam",
+    "si",
+    "je"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b7"
+  },
+  "topicId": 1,
+  "question": "Vi ___ umorni.",
+  "variants": [
+    "su",
+    "sam",
+    "si",
+    "ste",
+    "je",
+    "smo"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b8"
+  },
+  "topicId": 1,
+  "question": "Oni ___ prijatelji.",
+  "variants": [
+    "sam",
+    "su",
+    "si",
+    "je",
+    "smo",
+    "ste"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378b9"
+  },
+  "topicId": 1,
+  "question": "Koja od ove dve opcije ___ tačna?",
+  "variants": [
+    "su",
+    "smo",
+    "si",
+    "sam",
+    "je",
+    "ste"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378ba"
+  },
+  "topicId": 1,
+  "question": "Da li ti ___ video tu knjigu pre?",
+  "variants": [
+    "su",
+    "smo",
+    "sam",
+    "je",
+    "ste",
+    "si"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378bb"
+  },
+  "topicId": 1,
+  "question": "Oni ___ veoma dobri u svom poslu.",
+  "variants": [
+    "sam",
+    "su",
+    "si",
+    "je",
+    "smo",
+    "ste"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378bc"
+  },
+  "topicId": 1,
+  "question": "Koliko dugo ___ učili srpski jezik?",
+  "variants": [
+    "je",
+    "su",
+    "sam",
+    "si",
+    "ste",
+    "smo"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378bd"
+  },
+  "topicId": 1,
+  "question": "Da li oni ___ spremni za putovanje?",
+  "variants": [
+    "sam",
+    "si",
+    "su",
+    "je",
+    "smo",
+    "ste"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378be"
+  },
+  "topicId": 1,
+  "question": "Ti ___ najbolji vozač u gradu.",
+  "variants": [
+    "smo",
+    "je",
+    "si",
+    "ste",
+    "su",
+    "sam"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378bf"
+  },
+  "topicId": 3,
+  "question": "Ona je otišla ___ bioskop.",
+  "variants": [
+    "preko",
+    "na",
+    "pod",
+    "sa",
+    "u",
+    "iz"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c0"
+  },
+  "topicId": 3,
+  "question": "Kafa je servirana ___ šolji.",
+  "variants": [
+    "preko",
+    "u",
+    "iz",
+    "na",
+    "sa",
+    "pod"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c1"
+  },
+  "topicId": 3,
+  "question": "Mi smo se upoznali ___ fakultetu.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c2"
+  },
+  "topicId": 3,
+  "question": "Knjiga je pala ___ sto.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c3"
+  },
+  "topicId": 3,
+  "question": "On je došao ___ avionom.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c4"
+  },
+  "topicId": 3,
+  "question": "Devojka sedi ___ klupi.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c5"
+  },
+  "topicId": 3,
+  "question": "Ona je otišla ___ prodavnicu.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c6"
+  },
+  "topicId": 3,
+  "question": "Kada idemo ___ more?",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c7"
+  },
+  "topicId": 3,
+  "question": "Stavio je novac ___ novčanik.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c8"
+  },
+  "topicId": 3,
+  "question": "Ana čeka ___ autobus.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378c9"
+  },
+  "topicId": 3,
+  "question": "Knjiga leži ___ stolu.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378ca"
+  },
+  "topicId": 3,
+  "question": "Sliku možemo videti ___ zidu.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378cb"
+  },
+  "topicId": 3,
+  "question": "Pas se nalazi ___ bašti.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378cc"
+  },
+  "topicId": 3,
+  "question": "Stavio je ključeve ___ džepa.",
+  "variants": [
+    "pod",
+    "iz",
+    "na",
+    "u",
+    "sa",
+    "preko"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378cd"
+  },
+  "topicId": 3,
+  "question": "Putovao je ___ Evropi.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378ce"
+  },
+  "topicId": 3,
+  "question": "Devojka nosi prsten ___ ruci.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3d4663a3d3409b41378cf"
+  },
+  "topicId": 3,
+  "question": "Stigao je avion ___ aerodrom.",
+  "variants": [
+    "u",
+    "na",
+    "sa",
+    "iz",
+    "pod",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378e5"
+  },
+  "topicId": 4,
+  "question": "Ona ___ da čita knjige.",
+  "variants": [
+    "volem",
+    "voliš",
+    "voli",
+    "volu",
+    "volemo",
+    "volite"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378e6"
+  },
+  "topicId": 4,
+  "question": "Mi ___ ot kuče.",
+  "variants": [
+    "radi",
+    "rade",
+    "radem",
+    "radite",
+    "radimo",
+    "rademo"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378e7"
+  },
+  "topicId": 4,
+  "question": "On ___ rano svakog jutra.",
+  "variants": [
+    "ustajim",
+    "ustaje",
+    "ustajete",
+    "ustaješ",
+    "ustaja",
+    "ustajemo"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378e8"
+  },
+  "topicId": 4,
+  "question": "Oni ___ u centru grada.",
+  "variants": [
+    "stanuje",
+    "stanuju",
+    "stanujete",
+    "stanuješ",
+    "stanujam",
+    "stanujemo"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378e9"
+  },
+  "topicId": 4,
+  "question": "On ___ novu knjigu.",
+  "variants": [
+    "čite",
+    "čita",
+    "čitam",
+    "čiteš",
+    "čitemo",
+    "čitamo",
+    "čitaete"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378ea"
+  },
+  "topicId": 4,
+  "question": "Ja ___ kafu svaki dan.",
+  "variants": [
+    "piju",
+    "pije",
+    "pijemo",
+    "pijem",
+    "pija"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378eb"
+  },
+  "topicId": 4,
+  "question": "Ti ___ u školu",
+  "variants": [
+    "idem",
+    "idiš",
+    "ideš",
+    "idete",
+    "idite"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378ec"
+  },
+  "topicId": 4,
+  "question": "Mi ___ da ___.",
+  "variants": [
+    "moram / učiti",
+    "morem / učim",
+    "moramo / učiti",
+    "moremo / učiti",
+    "moramo / učimo",
+    "moremo / učimo"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378ed"
+  },
+  "topicId": 4,
+  "question": "Ja ___ sladoled.",
+  "variants": [
+    "volemo",
+    "volim",
+    "volem",
+    "voleš",
+    "volimo",
+    "vole"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64b3e4183a3d3409b41378ee"
+  },
+  "topicId": 4,
+  "question": "One ___ kod kuće.",
+  "variants": [
+    "večere",
+    "večera",
+    "večeru",
+    "večeri",
+    "večeraju",
+    "večeraje"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbec"
+  },
+  "topicId": 2,
+  "question": "___ ti se sviđa ova pesma?",
+  "variants": [
+    "Koliko",
+    "Kako",
+    "Šta",
+    "Zašto",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbed"
+  },
+  "topicId": 2,
+  "question": "___ dugo učiš srpski jezik?",
+  "variants": [
+    "Zašto",
+    "Kako",
+    "Koliko",
+    "Gde",
+    "Kada",
+    "Šta"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbee"
+  },
+  "topicId": 2,
+  "question": "___ imaš slobodnog vremena?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbef"
+  },
+  "topicId": 2,
+  "question": "___ se zoveš?",
+  "variants": [
+    "Koliko",
+    "Šta",
+    "Zašto",
+    "Gde",
+    "Kada",
+    "Kako"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf0"
+  },
+  "topicId": 2,
+  "question": "___ ti ideš?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf1"
+  },
+  "topicId": 2,
+  "question": "___ je tvoje omiljeno jelo?",
+  "variants": [
+    "Kada",
+    "Gde",
+    "Šta",
+    "Koliko",
+    "Zašto",
+    "Kako"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf2"
+  },
+  "topicId": 2,
+  "question": "___ živiš?",
+  "variants": [
+    "Kako",
+    "Šta",
+    "Koliko",
+    "Zašto",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf3"
+  },
+  "topicId": 2,
+  "question": "___ imaš godina?",
+  "variants": [
+    "Kada",
+    "Koliko",
+    "Zašto",
+    "Gde",
+    "Šta",
+    "Kako"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf4"
+  },
+  "topicId": 2,
+  "question": "___ ideš na odmor?",
+  "variants": [
+    "Kako",
+    "Gde",
+    "Zašto",
+    "Kada",
+    "Šta",
+    "Koliko"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf5"
+  },
+  "topicId": 2,
+  "question": "___ je tvoje omiljeno boja?",
+  "variants": [
+    "Kako",
+    "Kada",
+    "Gde",
+    "Zašto",
+    "Šta",
+    "Koja"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf6"
+  },
+  "topicId": 2,
+  "question": "___ si kupio?",
+  "variants": [
+    "Zašto",
+    "Šta",
+    "Kako",
+    "Kada",
+    "Gde",
+    "Koliko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf7"
+  },
+  "topicId": 2,
+  "question": "___ se osećaš?",
+  "variants": [
+    "Kada",
+    "Gde",
+    "Koliko",
+    "Zašto",
+    "Kako",
+    "Šta"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf8"
+  },
+  "topicId": 2,
+  "question": "___ si bio sinoć?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Koliko",
+    "Šta",
+    "Zašto"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbf9"
+  },
+  "topicId": 2,
+  "question": "___ ideš na fakultet?",
+  "variants": [
+    "Kako",
+    "Kada",
+    "Gde",
+    "Koliko",
+    "Zašto",
+    "Šta"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbfa"
+  },
+  "topicId": 2,
+  "question": "___ je tvoj omiljeni film?",
+  "variants": [
+    "Koje",
+    "Zašto",
+    "Gde",
+    "Kako",
+    "Kada",
+    "Šta"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbfb"
+  },
+  "topicId": 2,
+  "question": "___ je ime tog poznatog glumca koji je osvojio Oskara?",
+  "variants": [
+    "Zašto",
+    "Šta",
+    "Gde",
+    "Kako",
+    "Koje",
+    "Kada"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbfc"
+  },
+  "topicId": 2,
+  "question": "___ se nalazi najviša planina na svetu?",
+  "variants": [
+    "Kada",
+    "Kako",
+    "Gde",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbfd"
+  },
+  "topicId": 2,
+  "question": "___ je broj stanovnika u Kini?",
+  "variants": [
+    "Kada",
+    "Kako",
+    "Šta",
+    "Gde",
+    "Zašto",
+    "Koliko"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbfe"
+  },
+  "topicId": 2,
+  "question": "___ je trajanje prosječnog leta između New Yorka i Londona?",
+  "variants": [
+    "Kako",
+    "Kada",
+    "Gde",
+    "Koliko",
+    "Zašto",
+    "Šta"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fbff"
+  },
+  "topicId": 2,
+  "question": "___ je razlog zbog kojeg je sunce žuto?",
+  "variants": [
+    "Gde",
+    "Koliko",
+    "Kako",
+    "Zašto",
+    "Kada",
+    "Šta"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc00"
+  },
+  "topicId": 2,
+  "question": "___ je godina kada je osnovan prvi Univerzitet?",
+  "variants": [
+    "Koje",
+    "Zašto",
+    "Koliko",
+    "Gde",
+    "Šta",
+    "Kada"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc01"
+  },
+  "topicId": 2,
+  "question": "___ je vreme potrebno da se putuje do Meseca?",
+  "variants": [
+    "Zašto",
+    "Gde",
+    "Kako",
+    "Koliko",
+    "Šta",
+    "Kada"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc02"
+  },
+  "topicId": 2,
+  "question": "___ se nalazi crno more?",
+  "variants": [
+    "Kada",
+    "Zašto",
+    "Šta",
+    "Koliko",
+    "Gde",
+    "Kako"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc03"
+  },
+  "topicId": 2,
+  "question": "___ je osnovna jedinica informacije u računarstvu?",
+  "variants": [
+    "Gde",
+    "Koliko",
+    "Šta",
+    "Zašto",
+    "Kako",
+    "Kada"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc04"
+  },
+  "topicId": 2,
+  "question": "___ je glavni grad Australije?",
+  "variants": [
+    "Gde",
+    "Zašto",
+    "Kako",
+    "Koji",
+    "Kada",
+    "Šta"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc05"
+  },
+  "topicId": 2,
+  "question": "___ je površina najvećeg jezera na svetu?",
+  "variants": [
+    "Gde",
+    "Kako",
+    "Kada",
+    "Kolika",
+    "Zašto",
+    "Šta"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc06"
+  },
+  "topicId": 2,
+  "question": "___ je glavni grad Italije?",
+  "variants": [
+    "Gde",
+    "Zašto",
+    "Kako",
+    "Šta",
+    "Kada",
+    "Koji"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc07"
+  },
+  "topicId": 2,
+  "question": "___ je vreme koje je potrebno za kuvanje testenine al dente?",
+  "variants": [
+    "Kako",
+    "Koliko",
+    "Kada",
+    "Zašto",
+    "Šta",
+    "Gde"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc08"
+  },
+  "topicId": 2,
+  "question": "___ je najduža reka u Evropi?",
+  "variants": [
+    "Koja",
+    "Kada",
+    "Gde",
+    "Zašto",
+    "Šta",
+    "Koliko"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc09"
+  },
+  "topicId": 2,
+  "question": "___ tvoj najbolji prijatelj?",
+  "variants": [
+    "Ko",
+    "Šta",
+    "Gde",
+    "Kako",
+    "Zašto",
+    "Kada"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0a"
+  },
+  "topicId": 2,
+  "question": "___ putovao prošlog leta?",
+  "variants": [
+    "Kako",
+    "Šta",
+    "Gde",
+    "Koliko",
+    "Zašto",
+    "Kada"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0b"
+  },
+  "topicId": 2,
+  "question": "___ počeo/la učiti srpski jezik?",
+  "variants": [
+    "Kako",
+    "Ko",
+    "Koliko",
+    "Šta",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0c"
+  },
+  "topicId": 2,
+  "question": "___ putuješ na letovanje?",
+  "variants": [
+    "Koliko",
+    "Kako",
+    "Šta",
+    "Zašto",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0d"
+  },
+  "topicId": 2,
+  "question": "___ je tvoj omiljeni sport?",
+  "variants": [
+    "Kada",
+    "Gde",
+    "Šta",
+    "Koliko",
+    "Zašto",
+    "Kako"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0e"
+  },
+  "topicId": 2,
+  "question": "___ govoriš engleski?",
+  "variants": [
+    "Kako",
+    "Šta",
+    "Koliko",
+    "Zašto",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc0f"
+  },
+  "topicId": 2,
+  "question": "___ voliš da provodiš vreme?",
+  "variants": [
+    "Koliko",
+    "Zašto",
+    "Kako",
+    "Šta",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc10"
+  },
+  "topicId": 2,
+  "question": "___ si poslednji put čitao/la knjigu?",
+  "variants": [
+    "Koliko",
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Šta"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc11"
+  },
+  "topicId": 2,
+  "question": "___ ćeš raditi ovog vikenda?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc12"
+  },
+  "topicId": 2,
+  "question": "___ putuješ na posao?",
+  "variants": [
+    "Koliko",
+    "Šta",
+    "Zašto",
+    "Gde",
+    "Kada",
+    "Kako"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc13"
+  },
+  "topicId": 2,
+  "question": "___ je tvoj omiljeni grad?",
+  "variants": [
+    "Gde",
+    "Kako",
+    "Šta",
+    "Zašto",
+    "Kada",
+    "Koliko"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc14"
+  },
+  "topicId": 2,
+  "question": "___ ti je omiljena boja?",
+  "variants": [
+    "Koliko",
+    "Zašto",
+    "Kako",
+    "Šta",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc15"
+  },
+  "topicId": 2,
+  "question": "___ ideš na sledeći odmor?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc16"
+  },
+  "topicId": 2,
+  "question": "___ znači reč 'automobil'?",
+  "variants": [
+    "Kako",
+    "Zašto",
+    "Gde",
+    "Koliko",
+    "Šta",
+    "Kada"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc17"
+  },
+  "topicId": 2,
+  "question": "___ se oblačiš kad je hladno?",
+  "variants": [
+    "Kako",
+    "Gde",
+    "Kada",
+    "Šta",
+    "Zašto",
+    "Koliko"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc18"
+  },
+  "topicId": 2,
+  "question": "___ je tvoj omiljeni način provođenja slobodnog vremena?",
+  "variants": [
+    "Koliko",
+    "Kada",
+    "Kako",
+    "Šta",
+    "Zašto",
+    "Gde"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc19"
+  },
+  "topicId": 2,
+  "question": "___ imaš planove za budućnost?",
+  "variants": [
+    "Zašto",
+    "Kako",
+    "Gde",
+    "Kada",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1a"
+  },
+  "topicId": 2,
+  "question": "___ ti je najdraži deo dana?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Šta",
+    "Koliko",
+    "Zašto"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1b"
+  },
+  "topicId": 2,
+  "question": "___ ti se najviše dopada u srpskoj kulturi?",
+  "variants": [
+    "Koliko",
+    "Kako",
+    "Zašto",
+    "Šta",
+    "Gde",
+    "Kada"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1c"
+  },
+  "topicId": 2,
+  "question": "___ planiraš postići u narednih pet godina?",
+  "variants": [
+    "Kako",
+    "Gde",
+    "Zašto",
+    "Kada",
+    "Šta",
+    "Koliko"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1d"
+  },
+  "topicId": 2,
+  "question": "___ često putuješ?",
+  "variants": [
+    "Koliko",
+    "Zašto",
+    "Kako",
+    "Gde",
+    "Kada",
+    "Šta"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1e"
+  },
+  "topicId": 2,
+  "question": "___ ti je omiljeni deo leta?",
+  "variants": [
+    "Kako",
+    "Gde",
+    "Zašto",
+    "Koliko",
+    "Šta",
+    "Kada"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64beb29d7505fba16d89fc1f"
+  },
+  "topicId": 2,
+  "question": "___ si odlučio/la naučiti srpski jezik?",
+  "variants": [
+    "Gde",
+    "Kada",
+    "Kako",
+    "Zašto",
+    "Koliko",
+    "Šta"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc25"
+  },
+  "topicId": 3,
+  "question": "Knjiga je postavljena ___ stolu.",
+  "variants": [
+    "iz",
+    "na",
+    "preko",
+    "sa",
+    "pod",
+    "u"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc26"
+  },
+  "topicId": 3,
+  "question": "Telefon je ostavljen ___ torbi.",
+  "variants": [
+    "preko",
+    "sa",
+    "pod",
+    "iz",
+    "u",
+    "na"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc27"
+  },
+  "topicId": 3,
+  "question": "Auto je parkiran ___ ulici.",
+  "variants": [
+    "preko",
+    "u",
+    "iz",
+    "pod",
+    "sa",
+    "na"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc28"
+  },
+  "topicId": 3,
+  "question": "Cvijeće je posađeno ___ vazi.",
+  "variants": [
+    "sa",
+    "u",
+    "na",
+    "preko",
+    "iz",
+    "pod"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc29"
+  },
+  "topicId": 3,
+  "question": "Torta je ukrašena ___ šlagom.",
+  "variants": [
+    "sa",
+    "u",
+    "preko",
+    "pod",
+    "na",
+    "iz"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2a"
+  },
+  "topicId": 3,
+  "question": "Pisac je poznat ___ svojim romanima.",
+  "variants": [
+    "iz",
+    "na",
+    "pod",
+    "preko",
+    "u",
+    "sa"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2b"
+  },
+  "topicId": 3,
+  "question": "Deca su se igrala ___ parku.",
+  "variants": [
+    "na",
+    "iz",
+    "sa",
+    "pod",
+    "u",
+    "preko"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2c"
+  },
+  "topicId": 3,
+  "question": "Novac je sakriven ___ jastuku.",
+  "variants": [
+    "pod",
+    "u",
+    "sa",
+    "preko",
+    "na",
+    "iz"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2d"
+  },
+  "topicId": 3,
+  "question": "Slika je okačena ___ zidu.",
+  "variants": [
+    "u",
+    "na",
+    "iz",
+    "sa",
+    "preko",
+    "pod"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2e"
+  },
+  "topicId": 3,
+  "question": "Pas je skočio ___ ogradu.",
+  "variants": [
+    "na",
+    "u",
+    "iz",
+    "preko",
+    "pod",
+    "sa"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc2f"
+  },
+  "topicId": 3,
+  "question": "Torta je spremna ___ pečenja.",
+  "variants": [
+    "za",
+    "prema",
+    "od",
+    "iznad",
+    "pored",
+    "između"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc30"
+  },
+  "topicId": 3,
+  "question": "Ključevi su sakriveni ___ ormariću.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "ispod",
+    "iznad",
+    "između"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc31"
+  },
+  "topicId": 3,
+  "question": "Ptica leti ___ neba.",
+  "variants": [
+    "na",
+    "prema",
+    "iznad",
+    "ispod",
+    "iza",
+    "između"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc32"
+  },
+  "topicId": 3,
+  "question": "Moja knjiga je drugačija ___ tvoje.",
+  "variants": [
+    "na",
+    "prema",
+    "ispod",
+    "od",
+    "iznad",
+    "iza"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc33"
+  },
+  "topicId": 3,
+  "question": "Rosa se skuplja ___ travi.",
+  "variants": [
+    "na",
+    "prema",
+    "iznad",
+    "između",
+    "od",
+    "iza"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc34"
+  },
+  "topicId": 3,
+  "question": "Telefon leži ___ stolu.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispod",
+    "iznad",
+    "od",
+    "između"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc35"
+  },
+  "topicId": 3,
+  "question": "Voz je krenuo ___ stanice.",
+  "variants": [
+    "u",
+    "prema",
+    "ispred",
+    "iza",
+    "ispod",
+    "iza"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc36"
+  },
+  "topicId": 3,
+  "question": "Olovka je postavljena ___ stolu.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispred",
+    "ispod",
+    "od",
+    "iznad"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc37"
+  },
+  "topicId": 3,
+  "question": "Cveće raste ___ bašti.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispred",
+    "iza",
+    "ispod",
+    "od"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc38"
+  },
+  "topicId": 3,
+  "question": "Ptica je sletela ___ grane.",
+  "variants": [
+    "na",
+    "prema",
+    "iza",
+    "ispod",
+    "ispred",
+    "od"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc39"
+  },
+  "topicId": 3,
+  "question": "Knjiga je smeštena ___ polici.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "iznad",
+    "pored",
+    "između"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3a"
+  },
+  "topicId": 3,
+  "question": "Torba je postavljena ___ stolu.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispod",
+    "ispred",
+    "od",
+    "iznad"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3b"
+  },
+  "topicId": 3,
+  "question": "Maca se krije ___ krevetu.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispod",
+    "ispred",
+    "od",
+    "iznad"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3c"
+  },
+  "topicId": 3,
+  "question": "Voz je stao ___ stanici.",
+  "variants": [
+    "na",
+    "prema",
+    "iza",
+    "ispod",
+    "ispred",
+    "od"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3d"
+  },
+  "topicId": 3,
+  "question": "Telefon visi ___ zidu.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "ispod",
+    "iznad",
+    "između"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3e"
+  },
+  "topicId": 3,
+  "question": "Majica je obješena ___ vešalici.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "ispod",
+    "iznad",
+    "iza"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc3f"
+  },
+  "topicId": 3,
+  "question": "Papir je između knjiga ___ regalu.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispod",
+    "ispred",
+    "od",
+    "iznad"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc40"
+  },
+  "topicId": 3,
+  "question": "Kafa je servirana ___ šolji.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "iznad",
+    "pored",
+    "između"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc41"
+  },
+  "topicId": 3,
+  "question": "Dečko se skriva ___ drvećem.",
+  "variants": [
+    "iza",
+    "prema",
+    "ispod",
+    "ispred",
+    "od",
+    "iznad"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfc2557505fba16d89fc42"
+  },
+  "topicId": 3,
+  "question": "Novčanik je ostavljen ___ stolu.",
+  "variants": [
+    "u",
+    "prema",
+    "od",
+    "ispod",
+    "iznad",
+    "iza"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc45"
+  },
+  "topicId": 4,
+  "question": "Ja ___ učim strane jezike.",
+  "variants": [
+    "učim",
+    "učiš",
+    "uči",
+    "učimo",
+    "učite",
+    "uče"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc46"
+  },
+  "topicId": 4,
+  "question": "Ti ___ voziš bicikl.",
+  "variants": [
+    "vozim",
+    "voziš",
+    "vozi",
+    "vozimo",
+    "vozite",
+    "voze"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc47"
+  },
+  "topicId": 4,
+  "question": "On ___ gleda omiljenu seriju.",
+  "variants": [
+    "gledam",
+    "gledaš",
+    "gleda",
+    "gledamo",
+    "gledate",
+    "gledaju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc48"
+  },
+  "topicId": 4,
+  "question": "Mi ___ slušamo muziku.",
+  "variants": [
+    "slušam",
+    "slušaš",
+    "sluša",
+    "slušamo",
+    "slušate",
+    "slušaju"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc49"
+  },
+  "topicId": 4,
+  "question": "Vi ___ trčite svaki dan.",
+  "variants": [
+    "trčim",
+    "trčiš",
+    "trči",
+    "trčimo",
+    "trčite",
+    "trče"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4a"
+  },
+  "topicId": 4,
+  "question": "Oni ___ igraju fudbal.",
+  "variants": [
+    "igram",
+    "igraš",
+    "igra",
+    "igramo",
+    "igrate",
+    "igraju"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4b"
+  },
+  "topicId": 4,
+  "question": "Ana ___ crta predivne slike.",
+  "variants": [
+    "crtam",
+    "crtaš",
+    "crta",
+    "crtamo",
+    "crtate",
+    "crtaju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4c"
+  },
+  "topicId": 4,
+  "question": "Marko ___ čita knjige.",
+  "variants": [
+    "čitam",
+    "čitaš",
+    "čita",
+    "čitamo",
+    "čitate",
+    "čitaju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4d"
+  },
+  "topicId": 4,
+  "question": "Deca ___ igraju na igralištu.",
+  "variants": [
+    "igram",
+    "igraš",
+    "igra",
+    "igramo",
+    "igrate",
+    "igraju"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4e"
+  },
+  "topicId": 4,
+  "question": "Profesor ___ objašnjava novu lekciju.",
+  "variants": [
+    "objašnjavam",
+    "objašnjavaš",
+    "objašnjava",
+    "objašnjavamo",
+    "objašnjavate",
+    "objašnjavaju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc4f"
+  },
+  "topicId": 4,
+  "question": "Kako se ___ tvoje sestre?",
+  "variants": [
+    "zove",
+    "zovem",
+    "zoveš",
+    "zovu",
+    "zovete",
+    "zovemo"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc50"
+  },
+  "topicId": 4,
+  "question": "Doktor ___ pacijente svakog dana.",
+  "variants": [
+    "pregledam",
+    "pregledaš",
+    "pregleda",
+    "pregledamo",
+    "pregledate",
+    "pregledaju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc51"
+  },
+  "topicId": 4,
+  "question": "Šta ___ ti i tvoj brat?",
+  "variants": [
+    "planiram",
+    "planiraš",
+    "planira",
+    "planiramo",
+    "planirate",
+    "planiraju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc52"
+  },
+  "topicId": 4,
+  "question": "Naši prijatelji ___ za vikend.",
+  "variants": [
+    "putuju",
+    "putuješ",
+    "putuje",
+    "putujemo",
+    "putujete",
+    "putuju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc53"
+  },
+  "topicId": 4,
+  "question": "Mama ___ ukusne kolače.",
+  "variants": [
+    "pravim",
+    "praviš",
+    "pravi",
+    "pravimo",
+    "pravite",
+    "prave"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc54"
+  },
+  "topicId": 4,
+  "question": "Oni ___ na istom univerzitetu.",
+  "variants": [
+    "studiram",
+    "studiraš",
+    "studira",
+    "studiramo",
+    "studirate",
+    "studiraju"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc55"
+  },
+  "topicId": 4,
+  "question": "Tvoj brat ___ talentovani fudbaler.",
+  "variants": [
+    "je",
+    "sam",
+    "si",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc56"
+  },
+  "topicId": 4,
+  "question": "Već dugo ___ za odmorom.",
+  "variants": [
+    "želim",
+    "želiš",
+    "želi",
+    "želimo",
+    "želite",
+    "žele"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc57"
+  },
+  "topicId": 4,
+  "question": "Gde ___ tvoja sestra?",
+  "variants": [
+    "ide",
+    "idem",
+    "ideš",
+    "idemo",
+    "idete",
+    "idu"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc58"
+  },
+  "topicId": 4,
+  "question": "Vreme brzo ___ .",
+  "variants": [
+    "prolazim",
+    "prolaziš",
+    "prolazi",
+    "prolazimo",
+    "prolazite",
+    "prolaze"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc59"
+  },
+  "topicId": 4,
+  "question": "Koliko često ____ tvoj prijatelj na putovanja?",
+  "variants": [
+    "putuje",
+    "putujem",
+    "putuješ",
+    "putujemo",
+    "putujete",
+    "putuju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5a"
+  },
+  "topicId": 4,
+  "question": "Zašto ____ svoje stare igračke?",
+  "variants": [
+    "bacam",
+    "baciš",
+    "baci",
+    "bacamo",
+    "bacate",
+    "bacaju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5b"
+  },
+  "topicId": 4,
+  "question": "Kako ____ svoje slobodno vreme?",
+  "variants": [
+    "provodim",
+    "provodiš",
+    "provodi",
+    "provodimo",
+    "provodite",
+    "provode"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5c"
+  },
+  "topicId": 4,
+  "question": "Da li ____ vežbate svaki dan?",
+  "variants": [
+    "vežbam",
+    "vežbaš",
+    "vežba",
+    "vežbamo",
+    "vežbate",
+    "vežbaju"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5d"
+  },
+  "topicId": 4,
+  "question": "Danas ____ ranije na posao.",
+  "variants": [
+    "idem",
+    "ideš",
+    "ide",
+    "idemo",
+    "idete",
+    "idu"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5e"
+  },
+  "topicId": 4,
+  "question": "Kako ____ na pitanje?",
+  "variants": [
+    "odgovaram",
+    "odgovaraš",
+    "odgovara",
+    "odgovaramo",
+    "odgovarate",
+    "odgovaraju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc5f"
+  },
+  "topicId": 4,
+  "question": "Marko ____ već tri godine.",
+  "variants": [
+    "živi",
+    "živim",
+    "živiš",
+    "živimo",
+    "živite",
+    "žive"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc60"
+  },
+  "topicId": 4,
+  "question": "Gde ____ ovog vikenda?",
+  "variants": [
+    "putujem",
+    "putuješ",
+    "putuje",
+    "putujemo",
+    "putujete",
+    "putuju"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc61"
+  },
+  "topicId": 4,
+  "question": "Zašto ____ knjigu umesto filma?",
+  "variants": [
+    "čitam",
+    "čitaš",
+    "čita",
+    "čitamo",
+    "čitate",
+    "čitaju"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfd7c77505fba16d89fc62"
+  },
+  "topicId": 4,
+  "question": "Oni ____ svoje ciljeve.",
+  "variants": [
+    "postižem",
+    "postižeš",
+    "postiže",
+    "postižemo",
+    "postižete",
+    "postižu"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc63"
+  },
+  "topicId": 1,
+  "question": "Ti ___ dobar učenik.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc64"
+  },
+  "topicId": 1,
+  "question": "On ___ visok i plave oči.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc65"
+  },
+  "topicId": 1,
+  "question": "Mi ___ srećni danas.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc66"
+  },
+  "topicId": 1,
+  "question": "Vi ___ izuzetno pametni.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc67"
+  },
+  "topicId": 1,
+  "question": "Oni ___ talentovani muzičari.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc68"
+  },
+  "topicId": 1,
+  "question": "Ko ___ na odmoru?",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc69"
+  },
+  "topicId": 1,
+  "question": "Mama i tata ___ kod bake i deke.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc6a"
+  },
+  "topicId": 1,
+  "question": "Ti ___ odličan prijatelj.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc6c"
+  },
+  "topicId": 1,
+  "question": "Da li ti ____ dobro?",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc6d"
+  },
+  "topicId": 1,
+  "question": "Ona ____ učiteljica engleskog jezika.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc6e"
+  },
+  "topicId": 1,
+  "question": "Mi ____ spremni za putovanje.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc6f"
+  },
+  "topicId": 1,
+  "question": "Vi ____ zaljubljeni.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc70"
+  },
+  "topicId": 1,
+  "question": "Deca ____ srećna u parku.",
+  "variants": [
+    "smo",
+    "ste",
+    "sam",
+    "su",
+    "si",
+    "je"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc72"
+  },
+  "topicId": 1,
+  "question": "Oni ____ odgovorni za organizaciju događaja.",
+  "variants": [
+    "je",
+    "si",
+    "su",
+    "smo",
+    "ste",
+    "sam"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc73"
+  },
+  "topicId": 1,
+  "question": "Ko ____ na sastanku?",
+  "variants": [
+    "sam",
+    "ste",
+    "si",
+    "smo",
+    "je",
+    "su"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc74"
+  },
+  "topicId": 1,
+  "question": "Profesor i studenti ____ zadovoljni rezultatima.",
+  "variants": [
+    "su",
+    "sam",
+    "si",
+    "smo",
+    "ste",
+    "je"
+  ],
+  "answer": 0
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc75"
+  },
+  "topicId": 1,
+  "question": "Tvoj pas ___ zaigran.",
+  "variants": [
+    "sam",
+    "je",
+    "si",
+    "su",
+    "smo",
+    "ste"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc76"
+  },
+  "topicId": 1,
+  "question": "Koja knjiga ___ na stolu?",
+  "variants": [
+    "sam",
+    "smo",
+    "si",
+    "je",
+    "su",
+    "ste"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc77"
+  },
+  "topicId": 1,
+  "question": "Zašto ti ___ tužan?",
+  "variants": [
+    "ste",
+    "sam",
+    "si",
+    "je",
+    "su",
+    "smo"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc78"
+  },
+  "topicId": 1,
+  "question": "Ja ___ iz Srbije, a ti iz Hrvatske.",
+  "variants": [
+    "smo",
+    "su",
+    "si",
+    "je",
+    "sam",
+    "ste"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc79"
+  },
+  "topicId": 1,
+  "question": "Gde ___ moj novi telefon?",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7a"
+  },
+  "topicId": 1,
+  "question": "Oni ___ srećni jer su pobedili.",
+  "variants": [
+    "je",
+    "sam",
+    "su",
+    "si",
+    "ste",
+    "smo"
+  ],
+  "answer": 2
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7b"
+  },
+  "topicId": 1,
+  "question": "Mi ___ učenici prvog razreda.",
+  "variants": [
+    "si",
+    "sam",
+    "je",
+    "smo",
+    "su",
+    "ste"
+  ],
+  "answer": 3
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7c"
+  },
+  "topicId": 1,
+  "question": "Da li oni ___ tvoji prijatelji?",
+  "variants": [
+    "sam",
+    "su",
+    "si",
+    "smo",
+    "je",
+    "ste"
+  ],
+  "answer": 1
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7d"
+  },
+  "topicId": 1,
+  "question": "Moj brat i ja ___ na moru.",
+  "variants": [
+    "su",
+    "sam",
+    "ste",
+    "si",
+    "smo",
+    "je"
+  ],
+  "answer": 4
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7e"
+  },
+  "topicId": 1,
+  "question": "Vi ___ ljubazni prema gostima.",
+  "variants": [
+    "sam",
+    "smo",
+    "si",
+    "su",
+    "je",
+    "ste"
+  ],
+  "answer": 5
+},
+{
+  "_id": {
+    "$oid": "64bfdb177505fba16d89fc7f"
+  },
+  "topicId": 1,
+  "question": "Deca ___ u vrtiću.",
+  "variants": [
+    "sam",
+    "si",
+    "je",
+    "smo",
+    "ste",
+    "su"
+  ],
+  "answer": 5
+}]

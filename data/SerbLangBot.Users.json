@@ -1,0 +1,119 @@
+[{
+  "_id": "39089659-894e-445e-bf0a-566aa5001cfe",
+  "name": "KirSmirnov",
+  "chatID": 481899825,
+  "currentExercise": {
+    "_id": "",
+    "topicId": 2,
+    "question": "___ se nalazi crno more?",
+    "variants": [
+      "Kada",
+      "Zašto",
+      "Šta",
+      "Koliko",
+      "Gde",
+      "Kako"
+    ],
+    "answer": 4
+  },
+  "stats": {
+    "topicProgress": {
+      "1": {
+        "allSolved": 12,
+        "successfulSolved": 8
+      },
+      "2": {
+        "allSolved": 6,
+        "successfulSolved": 2
+      },
+      "3": {
+        "allSolved": 2,
+        "successfulSolved": 1
+      },
+      "4": {
+        "allSolved": 5,
+        "successfulSolved": 1
+      }
+    }
+  }
+},
+{
+  "_id": "0ffbba21-00d8-4e72-a4d3-f377bf0804f2",
+  "name": "zu1us",
+  "chatID": 128622184,
+  "currentExercise": {
+    "_id": "",
+    "topicId": 3,
+    "question": "Novac je sakriven ___ jastuku.",
+    "variants": [
+      "pod",
+      "u",
+      "sa",
+      "preko",
+      "na",
+      "iz"
+    ],
+    "answer": 4
+  },
+  "stats": {
+    "topicProgress": {
+      "1": {
+        "allSolved": 3,
+        "successfulSolved": 1
+      },
+      "2": {
+        "allSolved": 5,
+        "successfulSolved": 1
+      },
+      "3": {
+        "allSolved": 2,
+        "successfulSolved": 0
+      },
+      "4": {
+        "allSolved": 1,
+        "successfulSolved": 0
+      }
+    }
+  }
+},
+{
+  "_id": "35b8b034-4285-40bf-beb1-953924f1e59d",
+  "name": "vijukej",
+  "chatID": {
+    "$numberLong": "5279795136"
+  },
+  "currentExercise": {
+    "_id": "",
+    "topicId": 2,
+    "question": "___ je osnovna jedinica informacije u računarstvu?",
+    "variants": [
+      "Gde",
+      "Koliko",
+      "Šta",
+      "Zašto",
+      "Kako",
+      "Kada"
+    ],
+    "answer": 2
+  },
+  "stats": {
+    "topicProgress": {
+      "1": {
+        "allSolved": 0,
+        "successfulSolved": 0
+      },
+      "2": {
+        "allSolved": 1,
+        "successfulSolved": 1
+      },
+      "3": {
+        "allSolved": 0,
+        "successfulSolved": 0
+      },
+      "4": {
+        "allSolved": 0,
+        "successfulSolved": 0
+      }
+    }
+  }
+}]
