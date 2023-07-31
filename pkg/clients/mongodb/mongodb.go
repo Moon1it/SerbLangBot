@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Moon1it/serb-lang-bot/internal/config"
+	"github.com/Moon1it/SerbLangBot/internal/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

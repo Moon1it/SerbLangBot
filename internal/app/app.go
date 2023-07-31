@@ -3,10 +3,10 @@ package app
 import (
 	"fmt"
 
-	"github.com/Moon1it/serb-lang-bot/internal/client/telegram"
-	"github.com/Moon1it/serb-lang-bot/internal/config"
-	handler "github.com/Moon1it/serb-lang-bot/internal/delivery/handlers"
-	"github.com/Moon1it/serb-lang-bot/pkg/clients/mongodb"
+	"github.com/Moon1it/SerbLangBot/internal/client/telegram"
+	"github.com/Moon1it/SerbLangBot/internal/config"
+	handler "github.com/Moon1it/SerbLangBot/internal/delivery/handlers"
+	"github.com/Moon1it/SerbLangBot/pkg/clients/mongodb"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"go.mongodb.org/mongo-driver/mongo"
 )

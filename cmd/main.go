@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/Moon1it/serb-lang-bot/internal/app"
+	"github.com/Moon1it/SerbLangBot/internal/app"
 	"github.com/joho/godotenv"
 )
 

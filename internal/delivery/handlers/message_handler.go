@@ -3,7 +3,7 @@ package handler
 import (
 	"fmt"
 
-	"github.com/Moon1it/serb-lang-bot/internal/service"
+	"github.com/Moon1it/SerbLangBot/internal/service"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"go.mongodb.org/mongo-driver/mongo"
 )

@@ -1,4 +1,4 @@
-module github.com/Moon1it/serb-lang-bot
+module github.com/Moon1it/SerbLangBot
 
 go 1.20
 

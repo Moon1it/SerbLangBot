@@ -3,9 +3,9 @@ package service
 import (
 	"fmt"
 
-	"github.com/Moon1it/serb-lang-bot/internal/database"
-	"github.com/Moon1it/serb-lang-bot/internal/models"
-	"github.com/Moon1it/serb-lang-bot/pkg/clients/keyboard"
+	"github.com/Moon1it/SerbLangBot/internal/database"
+	"github.com/Moon1it/SerbLangBot/internal/models"
+	"github.com/Moon1it/SerbLangBot/pkg/clients/keyboard"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/mongo"
