@@ -7,22 +7,22 @@ import (
 type Config struct {
 	MongoString string
 
+	DBName string
 	// DBHost     string
 	// DBPort     string
 	// DBUsername string
-	DBName string
 	// DBAuth     string
 	// DBPassword string
 }
 
 func Init() (*Config, error) {
 	var cfg Config = Config{
-		MongoString: os.Getenv("MongoString"),
+		MongoString: os.Getenv("MONGO_STRING"),
 
+		DBName: os.Getenv("DB_NAME"),
 		// DBHost:     os.Getenv("DB_HOST"),
 		// DBPort:     os.Getenv("DB_PORT"),
 		// DBUsername: os.Getenv("DB_USERNAME"),
-		DBName: os.Getenv("DB_NAME"),
 		// DBPassword: os.Getenv("DB_PASSWORD"),
 	}
 	return &cfg, nil

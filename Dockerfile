@@ -8,8 +8,11 @@ WORKDIR /go/src/app
 COPY . .
 
 # Build your Golang application
-RUN go build cmd/main.go 
+RUN go build cmd/main.go
+
+# Set environment variables for the Telegram API key and bot token
+ENV MONGO_STRING=MONGO_STRING
+ENV TELEGRAM_TOKEN=TELEGRAM_TOKEN
 
 # Run the application when the container starts
 CMD ["./main"]
-
