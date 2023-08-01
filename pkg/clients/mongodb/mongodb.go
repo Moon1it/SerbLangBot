@@ -11,11 +11,9 @@ import (
 )
 
 func ConnectToMongoDB(cfg *config.Config) (*mongo.Database, error) {
-	serverAPI := options.ServerAPI(options.ServerAPIVersion1)
-
 	opts := options.Client().
 		ApplyURI(cfg.MongoString).
-		SetServerAPIOptions(serverAPI)
+		SetServerAPIOptions(options.ServerAPI(options.ServerAPIVersion1))
 
 	client, err := mongo.Connect(context.TODO(), opts)
 	if err != nil {
