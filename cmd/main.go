@@ -4,14 +4,13 @@ import (
 	"log"
 
 	"github.com/Moon1it/SerbLangBot/internal/app"
-	"github.com/joho/godotenv"
 )
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Failed to load .env file", err)
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal("Failed to load .env file", err)
+	// }
 
 	app, err := app.Init()
 	if err != nil {
