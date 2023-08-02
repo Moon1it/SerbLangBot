@@ -13,12 +13,12 @@ import (
 func GetUserStats(db *mongo.Database, chatID int64) (tgbotapi.MessageConfig, error) {
 	stats, err := database.GetUserStats(db, chatID)
 	if err != nil {
-		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to get UserStats", err)
+		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to get UserStats: %w", err)
 	}
 
 	message, err := generateStatsMessage(db, stats)
 	if err != nil {
-		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to generate StatsMessage", err)
+		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to generate StatsMessage: %w", err)
 	}
 	msg := tgbotapi.NewMessage(chatID, message)
 	GetMainKeyboard(&msg)
@@ -35,7 +35,7 @@ func generateStatsMessage(db *mongo.Database, stats models.UserStats) (string, e
 		return "", err
 	}
 
-	for topicID, topicProgress := range stats.TopicProgress {
+	for topicID, topicProgress := range stats.ProgressByTopics {
 		topicName := getTopicNameByID(topics, topicID)
 		topicMessage := fmt.Sprintf("*%s*:\n", topicName)
 		topicMessage += fmt.Sprintf("Total solved: %d\n", topicProgress.AllSolved)
@@ -59,11 +59,11 @@ func getTopicNameByID(topics []models.Topic, topicID int64) string {
 func UpdateTopicProgress(db *mongo.Database, chatID int64, answer int) error {
 	user, err := database.GetUser(db, chatID)
 	if err != nil {
-		return fmt.Errorf("failed to get user")
+		return fmt.Errorf("failed to get user: %w", err)
 	}
 
-	topicID := int64(user.CurrentExercise.TopicId)
-	topicProgress, ok := user.Stats.TopicProgress[topicID]
+	topicID := int64(user.CurrentExercise.TopicID)
+	topicProgress, ok := user.Stats.ProgressByTopics[topicID]
 	if !ok {
 		// If the topicProgress entry doesn't exist, create a new one
 		topicProgress = models.TopicProgress{}
@@ -77,7 +77,7 @@ func UpdateTopicProgress(db *mongo.Database, chatID int64, answer int) error {
 	topicProgress.AllSolved++
 
 	// Update the map with the modified topicProgress
-	user.Stats.TopicProgress[topicID] = topicProgress
+	user.Stats.ProgressByTopics[topicID] = topicProgress
 
 	err = database.UpdateUserTopicProgress(db, chatID, topicID, topicProgress)
 	if err != nil {

@@ -140,7 +140,7 @@ func GetAnswerByQuestion(db *mongo.Database, question string) (*models.Exercise,
 	err := exercises.FindOne(context.TODO(), filter).Decode(&exercise)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
-			return nil, fmt.Errorf("exercise not found")
+			return nil, fmt.Errorf("exercise not found: %w", err)
 		}
 		return nil, fmt.Errorf("failed to get exercise: %w", err)
 	}
