@@ -81,8 +81,8 @@ func GetExerciseByTopicName(db *mongo.Database, topicName string) (*models.Exerc
 		{
 			"$lookup": bson.M{
 				"from":         "Topics",
-				"localField":   "topicId",
-				"foreignField": "topicId",
+				"localField":   "topicID",
+				"foreignField": "topicID",
 				"as":           "Topic",
 			},
 		},
