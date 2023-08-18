@@ -2,147 +2,114 @@ package database
 
 import (
 	"context"
+	"errors"
 	"fmt"
-	"log"
-	"math/rand"
 
 	"github.com/Moon1it/SerbLangBot/internal/models"
+	"github.com/Moon1it/SerbLangBot/pkg/database"
 	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-// func CreateExercise(db *mongo.Database, question string, answer int, topicId int, variants []string) error {
-// 	// Create a new exercise
-// 	newExercise := models.Exercise{
-// 		ID:       uuid.New().String(),
-// 		TopicId:  topicId,
-// 		Question: question,
-// 		Variants: variants,
-// 		Answer:   answer,
-// 	}
-//
-// 	// Insert the exercise into the collection
-// 	exercises := db.Collection("Exercises")
-// 	_, err := exercises.InsertOne(context.TODO(), newExercise)
-// 	if err != nil {
-// 		return err
-// 	}
-//
-// 	return nil
-// }
+func GetRandomExercise(topicId int) (*models.Exercise, error) {
+	exercises := database.GetCollection("Exercises")
 
-// Example usage:
-// err := database.CreateExercise(a.db, "questions", "new question", "answer", []string{
-//     "Ko?", "Sta?", "Kako?", "Zasto?",
-// })
-
-func GetRandomExercise(db *mongo.Database, topicId int) (*models.Exercise, error) {
-	// Get the exercises collection
-	exercises := db.Collection("Exercises")
-
-	// Create a filter to search for exercises by topic
 	filter := bson.M{"topicId": topicId}
 
-	// Prepare parameters to find a random document
-	opts := options.Find().SetLimit(1)
-	count, err := exercises.CountDocuments(context.TODO(), filter)
-	if err != nil {
-		return nil, err
+	pipeline := bson.A{
+		bson.D{{Key: "$match", Value: filter}},
+		bson.D{{Key: "$sample", Value: bson.D{{Key: "size", Value: 1}}}},
 	}
-	opts.SetSkip(rand.Int63n(count))
 
-	// Find a random exercise in the collection based on the filter
-	cursor, err := exercises.Find(context.TODO(), filter, opts)
+	cursor, err := exercises.Aggregate(context.TODO(), pipeline)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
 	}
 	defer cursor.Close(context.TODO())
 
-	// Get the first document from the cursor
 	var exercise models.Exercise
 	if cursor.Next(context.TODO()) {
 		err := cursor.Decode(&exercise)
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("failed to decode exercise: %w", err)
 		}
 	} else {
-		log.Println("Exercise not found")
-		return nil, nil
+		return nil, errors.New("exercise not found")
 	}
 
 	return &exercise, nil
 }
 
-func GetExerciseByTopicName(db *mongo.Database, topicName string) (*models.Exercise, error) {
-	// Get the Exercises collection
-	exercises := db.Collection("Exercises")
-	pipeline := []bson.M{
-		{
-			"$lookup": bson.M{
-				"from":         "Topics",
-				"localField":   "topicID",
-				"foreignField": "topicID",
-				"as":           "Topic",
-			},
+func GetExerciseByTopicName(topicName string) (*models.Exercise, error) {
+	exercises := database.GetCollection("Exercises")
+
+	pipeline := bson.A{
+		bson.D{
+			{Key: "$lookup", Value: bson.D{
+				{Key: "from", Value: "Topics"},
+				{Key: "localField", Value: "topicID"},
+				{Key: "foreignField", Value: "topicID"},
+				{Key: "as", Value: "Topic"},
+			}},
 		},
-		{
-			"$match": bson.M{
+		bson.D{
+			{Key: "$match", Value: bson.M{
 				"Topic.name": topicName,
-			},
+			}},
 		},
-		{
-			"$sample": bson.M{"size": 1},
+		bson.D{
+			{Key: "$sample", Value: bson.M{"size": 1}},
 		},
-		{
-			"$project": bson.M{
+		bson.D{
+			{Key: "$project", Value: bson.M{
 				"_id":   0,
 				"Topic": 0,
-			},
+			}},
 		},
 	}
 
-	// Perform data aggregation
 	cursor, err := exercises.Aggregate(context.Background(), pipeline)
 	if err != nil {
-		log.Fatal(err)
-		return nil, err
+		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
+	}
+	defer cursor.Close(context.Background())
+
+	if !cursor.Next(context.Background()) {
+		return nil, fmt.Errorf("no exercises found for topic: %s", topicName)
 	}
 
-	// Extract the query results
-	var result []*models.Exercise
-	if err := cursor.All(context.Background(), &result); err != nil {
-		log.Fatal(err)
-		return nil, err
+	var exercise models.Exercise
+	if err := cursor.Decode(&exercise); err != nil {
+		return nil, fmt.Errorf("failed to decode exercise: %w", err)
 	}
 
-	// Close the cursor
-	cursor.Close(context.Background())
-
-	// Check if there are any results
-	if len(result) == 0 {
-		return nil, fmt.Errorf("No exercises found for topic: %s", topicName)
-	}
-
-	// Return a random exercise
-	return result[0], nil
+	return &exercise, nil
 }
 
-func GetAnswerByQuestion(db *mongo.Database, question string) (*models.Exercise, error) {
-	// Get the exercises collection
-	exercises := db.Collection("Exercises")
+func GetAnswerByQuestion(question string) (*models.Exercise, error) {
+	exercises := database.GetCollection("Exercises")
 
-	// Create a filter to search for exercises by question
-	filter := bson.M{"question": question}
+	pipeline := bson.A{
+		bson.D{
+			{Key: "$match", Value: bson.M{"question": question}},
+		},
+		bson.D{
+			{Key: "$sample", Value: bson.M{"size": 1}},
+		},
+	}
 
-	// Find a random exercise in the collection based on the filter
-	var exercise models.Exercise
-	err := exercises.FindOne(context.TODO(), filter).Decode(&exercise)
+	cursor, err := exercises.Aggregate(context.TODO(), pipeline)
 	if err != nil {
-		if err == mongo.ErrNoDocuments {
-			return nil, fmt.Errorf("exercise not found: %w", err)
-		}
-		return nil, fmt.Errorf("failed to get exercise: %w", err)
+		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
+	}
+	defer cursor.Close(context.TODO())
+
+	if !cursor.Next(context.TODO()) {
+		return nil, fmt.Errorf("exercise not found for question: %s", question)
+	}
+
+	var exercise models.Exercise
+	if err := cursor.Decode(&exercise); err != nil {
+		return nil, fmt.Errorf("failed to decode exercise: %w", err)
 	}
 
 	return &exercise, nil

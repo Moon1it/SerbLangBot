@@ -1,0 +1,46 @@
+[
+  {
+    "topicID": 5,
+    "question": "Ovo je ___ grad! Ja sam ovde rođen!",
+    "variants": ["vaš", "tvoj", "njegov", "moj", "njen", "naš", "njihv"],
+    "answer": 3
+  },
+  {
+    "topicID": 5,
+    "question": "On ima lep automobil. Koliko misliš da košta ___ automobil?",
+    "variants": ["vaš", "moj", "njegov", "tvoj", "njen", "naš", "njiha"],
+    "answer": 2
+  },
+  {
+    "topicID": 5,
+    "question": "Da li si se već pripremila? Kada će ___ sledeći ispit?",
+    "variants": ["vaš", "tvoj", "njegov", "moj", "njen", "naš", "njihv"],
+    "answer": 1
+  },
+  {
+    "topicID": 5,
+    "question": "To je ___ auto. On ga je kupio prošle godine.",
+    "variants": ["vašo", "tvojo", "njegovo", "mojo", "njeno", "našo", "njihvo"],
+    "answer": 2
+  },
+  {
+    "topicID": 5,
+    "question": "Mi imamo najljepšu baštu. Volimo da provodimo vreme u ___ bašti.",
+    "variants": [
+      "vašoj",
+      "tvojoj",
+      "njegovoj",
+      "mojoj",
+      "njenoj",
+      "našoj",
+      "njihvoj"
+    ],
+    "answer": 5
+  },
+  {
+    "topicID": 5,
+    "question": "Ako tvoj telefon ne radi, možeš da koristiš ___ telefon.",
+    "variants": ["vaš", "njihv", "njegov", "moj", "njen", "tvoj", "naš"],
+    "answer": 3
+  }
+]

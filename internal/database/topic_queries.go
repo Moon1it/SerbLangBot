@@ -4,13 +4,13 @@ import (
 	"context"
 
 	"github.com/Moon1it/SerbLangBot/internal/models"
+	"github.com/Moon1it/SerbLangBot/pkg/database"
 	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
 )
 
-func GetTopicsCount(db *mongo.Database) (int64, error) {
+func GetTopicsCount() (int64, error) {
 	// Get the Topics collection
-	topics := db.Collection("Topics")
+	topics := database.GetCollection("Topics")
 
 	// Create a filter to search for all topics
 	filter := bson.M{} // An empty filter will return all documents in the collection
@@ -24,9 +24,9 @@ func GetTopicsCount(db *mongo.Database) (int64, error) {
 	return count, nil
 }
 
-func GetAllTopics(db *mongo.Database) ([]models.Topic, error) {
+func GetAllTopics() ([]models.Topic, error) {
 	// Get the Topics collection
-	topics := db.Collection("Topics")
+	topics := database.GetCollection("Topics")
 
 	// Create a filter to search for all topics
 	var filter bson.M // a nil filter will return all documents in the collection
