@@ -22,9 +22,6 @@ func GetStartMessage(chatID int64, userName string) (tgbotapi.MessageConfig, err
 	_, err := database.GetUser(chatID)
 	if err != nil {
 		if err == mongo.ErrNoDocuments { // User does not exist, create a new one
-			// Initialize the map for new topic progress
-			newProgressByTopics := make(map[int64]models.TopicStats)
-
 			// Get the total count of topics
 			count, err := database.GetTopicsCount()
 			if err != nil {
@@ -32,7 +29,9 @@ func GetStartMessage(chatID int64, userName string) (tgbotapi.MessageConfig, err
 			}
 
 			// Initialize topic progress for all topics
-			for i := int64(1); i <= count; i++ {
+			newProgressByTopics := make([]models.TopicStats, count)
+			var i int64
+			for i = 0; i < count; i++ {
 				newProgressByTopics[i] = models.TopicStats{
 					AllSolved:        0,
 					SuccessfulSolved: 0,

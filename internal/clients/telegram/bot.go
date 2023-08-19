@@ -26,7 +26,7 @@ func Init() (*Bot, error) {
 func (b *Bot) Run() error {
 	updateConfig := tgbotapi.NewUpdate(0)
 	updateConfig.Timeout = 60
-	// b.bot.Debug = true
+	b.bot.Debug = true
 	updates := b.bot.GetUpdatesChan(updateConfig)
 
 	for update := range updates {

@@ -5,15 +5,16 @@ import (
 
 	"github.com/Moon1it/SerbLangBot/internal/clients/telegram"
 	"github.com/Moon1it/SerbLangBot/pkg/database"
+	"github.com/joho/godotenv"
 )
 
 func main() {
-	// err := godotenv.Load()
-	// if err != nil {
-	// 	log.Fatal("Failed to load .env file:", err)
-	// }
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Failed to load .env file:", err)
+	}
 
-	err := database.StartMongoDB()
+	err = database.StartMongoDB()
 	if err != nil {
 		log.Fatal("Error starting MongoDB:", err)
 

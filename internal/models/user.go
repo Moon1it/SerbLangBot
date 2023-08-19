@@ -12,7 +12,7 @@ type User struct {
 }
 
 type UserStats struct {
-	ProgressByTopics map[int64]TopicStats `bson:"progressByTopics"` // Progress of the user in various topics
+	ProgressByTopics []TopicStats `bson:"progressByTopics"` // Progress of the user in various topics
 }
 
 type TopicStats struct {
