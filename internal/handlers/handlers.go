@@ -35,7 +35,7 @@ func HandleMessage(message *tgbotapi.Message) (MessageResponse, error) {
 		}
 		return MessageResponse{Message: message}, nil
 	case "Your progress 🎯":
-		message, err := services.GetUserStats(message.Chat.ID)
+		message, err := services.GetUserProgress(message.Chat.ID)
 		if err != nil {
 			return MessageResponse{}, err
 		}
