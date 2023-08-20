@@ -3,11 +3,51 @@ package services
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/Moon1it/SerbLangBot/internal/database"
 	"github.com/Moon1it/SerbLangBot/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"github.com/google/uuid"
 )
+
+func CreateUser(message *tgbotapi.Message) (models.User, error) {
+	// Get the total count of topics
+	count, err := database.GetTopicsCount()
+	if err != nil {
+		return models.User{}, fmt.Errorf("failed to get topics count: %w", err)
+	}
+
+	// Initialize topic progress for all topics
+	newProgressByTopics := make([]models.TopicStats, count)
+	var i int64
+	for i = 0; i < count; i++ {
+		newProgressByTopics[i] = models.TopicStats{
+			AllSolved:        0,
+			SuccessfulSolved: 0,
+		}
+	}
+
+	stats := models.UserStats{
+		ProgressByTopics: newProgressByTopics,
+	}
+
+	newUser := models.User{
+		ID:             uuid.New().String(),
+		Name:           message.From.UserName,
+		ChatID:         message.Chat.ID,
+		ActiveExercise: models.Exercise{},
+		Stats:          stats,
+		RegisteredAt:   time.Now(),
+	}
+
+	// Create the new user in the database
+	if err := database.CreateUser(newUser); err != nil {
+		return models.User{}, fmt.Errorf("failed to create user: %w", err)
+	}
+
+	return newUser, nil
+}
 
 // This function retrieves user statistics from the database,
 // generates a message with this statistics, adds a keyboard,

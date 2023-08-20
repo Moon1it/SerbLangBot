@@ -39,11 +39,17 @@ func (b *Bot) Run() error {
 				}
 
 				if response.Message.Text != "" {
-					b.SendMessage(response.Message)
+					_, err := b.bot.Send(response.Message)
+					if err != nil {
+						fmt.Println("Failed to send message:", err)
+					}
 				}
 
 				if len(response.Poll.Options) != 0 {
-					b.SendMessage(response.Poll)
+					_, err := b.bot.Send(response.Poll)
+					if err != nil {
+						fmt.Println("Failed to send message:", err)
+					}
 				}
 			}(update.Message)
 
@@ -58,11 +64,4 @@ func (b *Bot) Run() error {
 	}
 
 	return nil
-}
-
-func (b *Bot) SendMessage(msg tgbotapi.Chattable) {
-	_, err := b.bot.Send(msg)
-	if err != nil {
-		fmt.Println("Failed to send message:", err)
-	}
 }

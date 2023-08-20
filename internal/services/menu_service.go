@@ -2,13 +2,10 @@ package services
 
 import (
 	"fmt"
-	"time"
 
 	keyboard "github.com/Moon1it/SerbLangBot/internal/clients/telegram/keyboard"
 	"github.com/Moon1it/SerbLangBot/internal/database"
-	"github.com/Moon1it/SerbLangBot/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -17,42 +14,14 @@ func GetMainKeyboard(msg *tgbotapi.MessageConfig) {
 	msg.ReplyMarkup = keyboard.CreateMenuKeyboard(buttons)
 }
 
-func GetStartMessage(chatID int64, userName string) (tgbotapi.MessageConfig, error) {
+func GetStartMessage(message *tgbotapi.Message) (tgbotapi.MessageConfig, error) {
 	// Check if the user already exists in the database
-	_, err := database.GetUser(chatID)
+	_, err := database.GetUser(message.Chat.ID)
 	if err != nil {
-		if err == mongo.ErrNoDocuments { // User does not exist, create a new one
-			// Get the total count of topics
-			count, err := database.GetTopicsCount()
+		if err == mongo.ErrNoDocuments {
+			// User does not exist, create a new one
+			_, err := CreateUser(message)
 			if err != nil {
-				return tgbotapi.MessageConfig{}, fmt.Errorf("failed to get topics count: %w", err)
-			}
-
-			// Initialize topic progress for all topics
-			newProgressByTopics := make([]models.TopicStats, count)
-			var i int64
-			for i = 0; i < count; i++ {
-				newProgressByTopics[i] = models.TopicStats{
-					AllSolved:        0,
-					SuccessfulSolved: 0,
-				}
-			}
-
-			stats := models.UserStats{
-				ProgressByTopics: newProgressByTopics,
-			}
-
-			newUser := models.User{
-				ID:             uuid.New().String(),
-				Name:           userName,
-				ChatID:         chatID,
-				ActiveExercise: models.Exercise{},
-				Stats:          stats,
-				RegisteredAt:   time.Now(),
-			}
-
-			// Create the new user in the database
-			if err := database.CreateUser(newUser); err != nil {
 				return tgbotapi.MessageConfig{}, fmt.Errorf("failed to create user: %w", err)
 			}
 		} else {
@@ -60,30 +29,23 @@ func GetStartMessage(chatID int64, userName string) (tgbotapi.MessageConfig, err
 		}
 	}
 
-	// The user already exists or has been successfully created
-	startMessage := `🌟Hello and welcome to the Serbian Language Learning Bot!🌟
+	startMessage, err := database.GetServiceMessage("StartMessage")
+	if err != nil {
+		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to get start message: %w", err)
+	}
 
-I'm your dedicated language learning companion designed to help you master Serbian. Learning a new language comes with a host of exciting benefits:
-
-📖 Start Learning: Begin your language lessons and practice Serbian at your own pace. Whether you're a complete beginner or looking to enhance your existing knowledge, we've got you covered!
-
-🔄 Daily Practice: Engage in daily exercises to reinforce your language skills. Consistency is the key to language mastery, and our daily practice sessions will keep you on track.
-
-🎯 Vocabulary: Access our comprehensive Serbian vocabulary database. Expand your word bank and express yourself fluently in Serbian.
-
-🎮 Language Games: Have fun and learn through interactive games. Learning doesn't have to be boring - our language games make the process enjoyable and engaging!
-
-📈 Progress & Stats: Track your progress and see how far you've come. Celebrate your achievements and stay motivated as you see yourself making steady progress.
-
-To get started, simply type /menu and explore the various options available in our main menu. Let's embark on this language adventure together! 🚀😊`
-
-	msg := tgbotapi.NewMessage(chatID, startMessage)
+	msg := tgbotapi.NewMessage(message.Chat.ID, startMessage.Text)
 	GetMainKeyboard(&msg)
 	return msg, nil
 }
 
 func GetMainMenu(chatID int64) (tgbotapi.MessageConfig, error) {
-	msg := tgbotapi.NewMessage(chatID, "📚 Main Menu 📚\n\nWelcome back! Here are the options available in the main menu:")
+	menuMessage, err := database.GetServiceMessage("MenuMessage")
+	if err != nil {
+		return tgbotapi.MessageConfig{}, fmt.Errorf("failed to get menu message: %w", err)
+	}
+
+	msg := tgbotapi.NewMessage(chatID, menuMessage.Text)
 	GetMainKeyboard(&msg)
 	return msg, nil
 }
