@@ -2,50 +2,42 @@ package database
 
 import (
 	"context"
-	"errors"
 	"fmt"
+	"log"
 	"os"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var mongoClient *mongo.Client
-var dbName string
-
-func GetCollection(name string) *mongo.Collection {
-	return mongoClient.Database(dbName).Collection(name)
+type MongoClient struct {
+	Client *mongo.Client
 }
 
-func StartMongoDB() error {
+func ConnectToMongoDB() (*MongoClient, error) {
+
 	uri := os.Getenv("MONGODB_URI")
-	if uri == "" {
-		return errors.New("MONGODB_URI environment variable not set")
-	}
 
-	database := os.Getenv("DATABASE")
-	if database == "" {
-		return errors.New("DATABASE environment variable not set")
-	} else {
-		dbName = database
-	}
+	opts := options.Client().ApplyURI(uri)
 
-	var err error
-	mongoClient, err = mongo.Connect(context.Background(), options.Client().ApplyURI(uri))
+	client, err := mongo.Connect(context.TODO(), opts)
 	if err != nil {
-		return fmt.Errorf("failed to connect to MongoDB: %w", err)
+		return nil, fmt.Errorf("failed to connect to MongoDB: %w", err)
 	}
 
-	err = mongoClient.Ping(context.Background(), nil)
-	if err != nil {
-		return fmt.Errorf("failed to ping MongoDB: %w", err)
+	// Check if the connection is successful
+	if err := client.Ping(context.TODO(), nil); err != nil {
+		_ = client.Disconnect(context.TODO()) // Attempt to disconnect on failure
+		return nil, fmt.Errorf("failed to ping MongoDB: %w", err)
 	}
 
-	return nil
+	log.Println("Successfully connected to MongoDB!")
+
+	return &MongoClient{Client: client}, nil
 }
 
-func CloseMongoDB() error {
-	err := mongoClient.Disconnect(context.Background())
+func (m *MongoClient) CloseMongoDB() error {
+	err := m.Client.Disconnect(context.Background())
 	if err != nil {
 		return fmt.Errorf("failed to close MongoDB connection: %w", err)
 	}

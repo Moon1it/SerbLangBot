@@ -1,47 +1,28 @@
-package database
+package repository
 
 import (
 	"context"
-	"errors"
 	"fmt"
+	"os"
 
 	"github.com/Moon1it/SerbLangBot/internal/models"
-	"github.com/Moon1it/SerbLangBot/pkg/database"
 	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
-func GetRandomExercise(topicId int) (*models.Exercise, error) {
-	exercises := database.GetCollection("Exercises")
-
-	filter := bson.M{"topicId": topicId}
-
-	pipeline := bson.A{
-		bson.D{{Key: "$match", Value: filter}},
-		bson.D{{Key: "$sample", Value: bson.D{{Key: "size", Value: 1}}}},
-	}
-
-	cursor, err := exercises.Aggregate(context.TODO(), pipeline)
-	if err != nil {
-		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
-	}
-	defer cursor.Close(context.TODO())
-
-	var exercise models.Exercise
-	if cursor.Next(context.TODO()) {
-		err := cursor.Decode(&exercise)
-		if err != nil {
-			return nil, fmt.Errorf("failed to decode exercise: %w", err)
-		}
-	} else {
-		return nil, errors.New("exercise not found")
-	}
-
-	return &exercise, nil
+type ExerciseRepo struct {
+	Collection *mongo.Collection
 }
 
-func GetExerciseByTopicName(topicName string) (*models.Exercise, error) {
-	exercises := database.GetCollection("Exercises")
+func InitExerciseRepo(db *mongo.Client) *ExerciseRepo {
+	dbName := os.Getenv("DATABASE")
+	exerciseCollection := db.Database(dbName).Collection("Exercises")
+	return &ExerciseRepo{Collection: exerciseCollection}
+}
 
+// GetExerciseByTopic retrieves a random exercise for a given topic name from the database.
+// Returns the found exercise or an error if not found.
+func (e *ExerciseRepo) GetByTopic(topicName string) (*models.Exercise, error) {
 	pipeline := bson.A{
 		bson.D{
 			{Key: "$lookup", Value: bson.D{
@@ -67,7 +48,7 @@ func GetExerciseByTopicName(topicName string) (*models.Exercise, error) {
 		},
 	}
 
-	cursor, err := exercises.Aggregate(context.Background(), pipeline)
+	cursor, err := e.Collection.Aggregate(context.Background(), pipeline)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
 	}
@@ -85,9 +66,9 @@ func GetExerciseByTopicName(topicName string) (*models.Exercise, error) {
 	return &exercise, nil
 }
 
-func GetAnswerByQuestion(question string) (*models.Exercise, error) {
-	exercises := database.GetCollection("Exercises")
-
+// GetAnswerByQuestion retrieves an exercise by its question from the database.
+// Returns the found exercise or an error if not found.
+func (e *ExerciseRepo) GetAnswerByQuestion(question string) (*models.Exercise, error) {
 	pipeline := bson.A{
 		bson.D{
 			{Key: "$match", Value: bson.M{"question": question}},
@@ -97,7 +78,7 @@ func GetAnswerByQuestion(question string) (*models.Exercise, error) {
 		},
 	}
 
-	cursor, err := exercises.Aggregate(context.TODO(), pipeline)
+	cursor, err := e.Collection.Aggregate(context.TODO(), pipeline)
 	if err != nil {
 		return nil, fmt.Errorf("failed to execute aggregation: %w", err)
 	}

@@ -9,6 +9,6 @@ type ServiceMessage struct {
 }
 
 type MessageResponse struct {
-	Poll    tgbotapi.SendPollConfig
-	Message tgbotapi.MessageConfig
+	Poll    *tgbotapi.SendPollConfig
+	Message *tgbotapi.MessageConfig
 }
