@@ -8,15 +8,14 @@ import (
 	"github.com/Moon1it/SerbLangBot/internal/repository"
 	"github.com/Moon1it/SerbLangBot/internal/service"
 	"github.com/Moon1it/SerbLangBot/pkg/database"
-	"github.com/joho/godotenv"
 )
 
 func main() {
 	// Load environment variables from the .env file
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Failed to load .env file:", err)
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal("Failed to load .env file:", err)
+	// }
 
 	// Connect to the MongoDB database
 	mongoDB, err := database.ConnectToMongoDB()
