@@ -45,23 +45,36 @@ func TestHandler_HandleMessage_Start(t *testing.T) {
 			},
 			mockBehavior: func(user *mock_service.MockUser, navigation *mock_service.MockNavigation, message *tgbotapi.Message) {
 				user.EXPECT().GetUser(message).Return(&models.User{
-					ID:             "user123",
+					ID:             "aa481f82-fda1-4620-10b1-131b9d0d4ad4",
 					Name:           "John Doe",
 					ChatID:         123456789,
-					ActiveExercise: models.Exercise{
-						// Заполните данные упражнения, если нужно
-					},
+					ActiveExercise: models.Exercise{},
 					Stats: models.UserStats{
 						ProgressByTopics: []models.TopicStats{
 							{
-								AllSolved:        10,
-								SuccessfulSolved: 7,
+								AllSolved:        2,
+								SuccessfulSolved: 1,
 							},
 							{
 								AllSolved:        5,
+								SuccessfulSolved: 4,
+							},
+							{
+								AllSolved:        12,
 								SuccessfulSolved: 3,
 							},
-							// ... добавьте статистику по другим темам
+							{
+								AllSolved:        5,
+								SuccessfulSolved: 5,
+							},
+							{
+								AllSolved:        11,
+								SuccessfulSolved: 11,
+							},
+							{
+								AllSolved:        5,
+								SuccessfulSolved: 4,
+							},
 						},
 					},
 					RegisteredAt: time.Now(),

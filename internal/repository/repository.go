@@ -5,6 +5,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
+//go:generate mockgen -source=repository.go -destination=mocks/mock.go
+
 type User interface {
 	Create(newUser *models.User) error
 	GetByChatID(chatID int64) (*models.User, error)
